@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio KKN Tematik Universitas Cenderawasih Kelompok 43 di Kampung Kanawa, Kepulauan Yapen, Papua.">
+    <title>KKN Kelompok 43 Uncen 2026</title>
+    
+    <!-- ==========================================
+         1. BOOTSTRAP CSS
+         ========================================== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ==========================================
+         2. BOOTSTRAP ICONS
+         ========================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- ==========================================
+         3. GOOGLE FONTS - POPPINS
+         ========================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ==========================================
+         4. CSS KUSTOM
+         ========================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- ==========================================
+         5. FAVICON
+         ========================================== -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+</head>
+<body>
+
+
+    <!-- ==========================================
+         NAVIGASI DENGAN LOGO ASLI
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-yapen-blue sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="#beranda">
+                <!-- Logo Uncen -->
+                <img src="images/logo uncen.png" alt="Logo Uncen" height="40" class="me-2" 
+                     onerror="this.style.display='none'">
+                <!-- Logo Kelompok -->
+                <img src="images/logo kelompok.png" alt="Logo Kelompok 43" height="40" class="me-2"
+                     onerror="this.style.display='none'">
+                <span>KELOMPOK 43 UNCEN 2026</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#beranda">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#profil">Profil Lokasi</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#potensi">Potensi SDA</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#jurnal">Jurnal</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#proker">Program Kerja</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#galeri">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#tim">Tim KKN</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#kontak">Hubungi Kami</a></li>
+                     <li class="nav-item">
+        <button onclick="toggleDarkMode()" class="btn btn-sm btn-outline-light ms-2" id="darkModeBtn" style="border-radius: 50px; padding: 5px 15px;">
+            <i class="bi bi-moon-fill"></i> <span class="d-none d-md-inline">Mode</span>
+        </button>
+    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+         HERO SECTION DENGAN LOGO ASLI
+         ========================================== -->
+    <header id="beranda" class="text-center py-5 reveal"></header>
+        <div class="container py-5 hero-container">
+            <!-- LOGO HERO -->
+            <div class="d-flex justify-content-center align-items-center gap-4 mb-4 flex-wrap">
+                <img src="images/logo uncen.png" alt="Logo Uncen" height="80" 
+                     onerror="this.style.display='none'">
+                <span class="text-muted fs-1 fw-light">+</span>
+                <img src="images/logo kelompok.png" alt="Logo Kelompok 43" height="80" 
+                     onerror="this.style.display='none'">
+            </div>
+            
+            <h1 class="display-5 display-md-4 fw-bold text-dark">Selamat Datang di Website KKN</h1>
+            <p class="lead mt-3 text-secondary fw-semibold">Kelompok 43 KKN Tematik - Universitas Cenderawasih 2026</p>
+            <p class="text-muted mx-auto" style="max-width: 700px;">
+                Website ini adalah portofolio digital dari program kerja dan pengabdian masyarakat 
+                kelompok kami selama masa bakti di <strong>Kampung Kanawa, Kepulauan Yapen</strong>, Papua. 
+                <span class="d-block mt-2 fst-italic">"Bersama Membangun, Mengabdi untuk Yapen yang Lebih Baik."</span>
+            </p>
+            <a href="#profil" class="btn btn-yapen-blue btn-lg mt-4 fw-bold shadow-sm">
+                <i class="bi bi-geo-alt-fill me-2"></i>Kenali Lokasi Kami
+            </a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         BAGIAN PROFIL LOKASI - KAMPUNG KANAWA
+         ========================================== -->
+    <section id="profil" class="py-5 bg-white-solid reveal reveal-1"></section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 card-glass">
+                    <h2 class="fw-bold mb-3 text-yapen">
+                        <i class="bi bi-map-fill me-2"></i>Profil Lokasi KKN
+                    </h2>
+                    <p><strong>Lokasi Pengabdian:</strong> Kampung Kanawa, Kepulauan Yapen, Papua</p>
+                    
+                    <div class="mt-3">
+                        <h6 class="fw-bold text-yapen"><i class="bi bi-info-circle-fill me-1"></i> Tentang Kampung Kanawa</h6>
+                        <p class="text-muted small">
+                            Kampung Kanawa adalah salah satu kampung di Distrik Kosiwo, Kabupaten Kepulauan Yapen, Papua. 
+                            Kampung ini memiliki potensi alam yang melimpah dengan masyarakat yang mayoritas 
+                            bekerja sebagai nelayan dan petani.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-3">
+                        <h6 class="fw-bold text-yapen"><i class="bi bi-people-fill me-1"></i> Kondisi Sosial</h6>
+                        <p class="text-muted small">
+                            Masyarakat Kampung Kanawa hidup dalam kearifan lokal yang kuat dengan 
+                            semangat gotong-royong yang tinggi.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-3">
+                        <h6 class="fw-bold text-yapen"><i class="bi bi-geo-alt-fill me-1"></i> Akses Lokasi</h6>
+                        <p class="text-muted small">
+                            Akses ke wilayah Kosiwo didukung oleh jaringan jalan kolektor primer dari pusat kota. Anda dapat menggunakan moda transportasi lokal seperti ojek motor, mobil sewaan (angkot/taksi pedesaan), atau memanfaatkan armada bus DAMRI pedesaan jika rutenya melintasi area pemukiman terdekat..
+                        </p>
+                    </div>
+
+                    <div class="mt-3">
+                        <span class="badge bg-yapen-blue me-1">Papua</span>
+                        <span class="badge bg-yapen-blue me-1">Kepulauan Yapen</span>
+                        <span class="badge bg-yapen-blue me-1">Kampung Kanawa</span>
+                        <span class="badge bg-yapen-blue">KKN 2026</span>
+                    </div>
+                </div>
+                
+                <!-- ==========================================
+                     PETA KAMPUNG KANAWA
+                     ========================================== -->
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden border">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63899.905678439!2d135.962195!3d-1.761754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x680354ee9bd9ac9b%3A0x86469ee4ef038149!2sPulau%20Japen!5e0!3m2!1sid!2sid!4v1700000000000" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Peta Kampung Kanawa, Kepulauan Yapen">
+                        </iframe>
+                    </div>
+                    <p class="text-muted small text-center mt-2">
+                        <i class="bi bi-pin-map-fill text-danger"></i> Kampung Kanawa, Distrik Kosiwo, Kepulauan Yapen, Papua
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BAGIAN POTENSI SDA
+         ========================================== -->
+
+    <section id="potensi" class="py-5 bg-light-solid reveal reveal-2">
+
+
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-yapen">
+                    <i class="bi bi-tree-fill me-2"></i>Potensi Sumber Daya Alam
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Kampung Kanawa di Kepulauan Yapen dikaruniai kekayaan alam melimpah.
+                </p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif p-3 text-center">
+                        <div class="card-body">
+                            <div class="icon-potensi mb-3">
+                                <i class="bi bi-water fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-yapen">Kelautan & Perikanan</h5>
+                            <p class="text-muted small">Ikan segar, rumput laut, dan wisata pantai.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif p-3 text-center">
+                        <div class="card-body">
+                            <div class="icon-potensi mb-3">
+                                <i class="bi bi-flower1 fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-yapen">Pertanian & Perkebunan</h5>
+                            <p class="text-muted small">Potensi pengembangan komoditas lokal seperti kelapa, cokelat, serta buah khas pulau seperti matoa dan durian</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif p-3 text-center">
+                        <div class="card-body">
+                            <div class="icon-potensi mb-3">
+                                <i class="bi bi-tree fs-1"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3 text-yapen">Hutan & Keanekaragaman</h5>
+                            <p class="text-muted small"> Sejalan dengan karakteristik Kabupaten Kepulauan Yapen secara umum yang didominasi kawasan hutan produksi dan lindung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BAGIAN JURNAL KEGIATAN
+         ========================================== -->
+    <section id="jurnal" class="py-5 bg-white-solid reveal reveal-3">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-yapen">
+                    <i class="bi bi-calendar3 me-2"></i>Jurnal Kegiatan KKN
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Catatan perjalanan pengabdian mingguan di Kampung Kanawa.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-img text-white">
+                        <i class="bi bi-flag-fill"></i>
+                    </div>
+                    <div class="timeline-content p-4 rounded shadow-sm bg-white kartu-interaktif">
+                        <span class="badge bg-yapen-blue text-white mb-2">Minggu 1 (Awal Juli)</span>
+                        <h5 class="fw-bold mb-2">Pemberangkatan & Observasi</h5>
+                        <p class="text-muted small mb-0">Perjalanan ke posko, perkenalan dengan tokoh masyarakat Kampung Kanawa.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-img text-white">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <div class="timeline-content p-4 rounded shadow-sm bg-white kartu-interaktif">
+                        <span class="badge bg-yapen-blue text-white mb-2">Minggu 2</span>
+                        <h5 class="fw-bold mb-2">Penyusunan Program Kerja</h5>
+                        <p class="text-muted small mb-0">Seminar program kerja bersama warga dan kepala Kampung Kanawa.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-img text-white">
+                        <i class="bi bi-play-fill"></i>
+                    </div>
+                    <div class="timeline-content p-4 rounded shadow-sm bg-white kartu-interaktif">
+                        <span class="badge bg-yapen-blue text-white mb-2">Minggu 3 (Pertengahan Juli)</span>
+                        <h5 class="fw-bold mb-2">Eksekusi Program Kerja</h5>
+                        <p class="text-muted small mb-0">Rumah belajar untuk anak-anak dan survei pemetaan Kampung Kanawa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BAGIAN PROGRAM KERJA
+         ========================================== -->
+    <section id="proker" class="bg-light-solid py-5 reveal reveal-4">
+
+        <div class="container">
+            
+            <!-- ==========================================
+                 PROGRAM UTAMA (3 PROKER BARU)
+                 ========================================== -->
+            <div class="text-center mb-5">
+                <span class="badge bg-yapen-blue text-white fw-bold px-3 py-2 mb-2 fs-6">PROGRAM UTAMA</span>
+                <h2 class="fw-bold text-dark">
+                    <i class="bi bi-layers-half text-yapen me-2"></i>3 Program Kerja Unggulan
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Tiga program kerja utama kelompok 43 yang dirancang untuk memberikan dampak nyata 
+                    bagi masyarakat Kampung Kanawa, Kepulauan Yapen.
+                </p>
+            </div>
+            
+            <div class="row g-4 mb-5 text-center">
+                
+                                <!-- ==========================================
+                     PROKER 1: PEMBUATAN TUGU SELAMAT DATANG
+                     ========================================== -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif p-3">
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-yapen">
+                                <i class="bi bi-signpost-2-fill fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark">Pembuatan Tugu Selamat Datang</h5>
+                            <p class="card-text text-muted small mb-3">
+                                Membangun tugu sebagai simbol penyambutan dan identitas Kampung Kanawa 
+                                di pintu masuk utama kampung.
+                            </p>
+                            <ul class="card-text text-dark small text-start list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-yapen me-2"></i>
+                                    Perancangan desain tugu yang mencerminkan kearifan lokal Kampung Kanawa
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-yapen me-2"></i>
+                                    Pembangunan tugu di pintu masuk utama kampung
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-yapen me-2"></i>
+                                    Pemasangan tulisan "Selamat Datang di Kampung Kanawa"
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                     <!-- ==========================================
+                     PROKER 2: PEMBUATAN PLANG JALAN
+                     ========================================== -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif p-3">
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-success">
+                                <i class="bi bi-sign-turn-right-fill fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark">Pembuatan Plang Jalan</h5>
+                            <p class="card-text text-muted small mb-3">
+                                Memasang plang petunjuk arah di berbagai titik strategis untuk 
+                                memudahkan akses dan navigasi di Kampung Kanawa.
+                            </p>
+                            <ul class="card-text text-dark small text-start list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Identifikasi titik-titik strategis pemasangan plang jalan
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Pembuatan plang dengan bahan kayu lokal yang tahan cuaca
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Pemasangan plang di persimpangan dan jalur utama
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                               <!-- ==========================================
+                     PROKER 3: TEMPAT SAMPAH DI GEREJA, SD, DAN PAUD
+                     ========================================== -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif p-3">
+                        <div class="card-body">
+                            <div class="icon-box mb-3 text-warning">
+                                <i class="bi bi-trash3-fill fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-dark">Tempat Sampah di Gereja, SD & PAUD</h5>
+                            <p class="card-text text-muted small mb-3">
+                                Menyediakan tempat sampah yang layak di 3 gereja, 1 Sekolah Dasar, 
+                                dan 1 PAUD di Kampung Kanawa untuk menciptakan lingkungan yang bersih dan sehat.
+                            </p>
+                            <ul class="card-text text-dark small text-start list-unstyled">
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                    Pembuatan 5 unit tempat sampah (3 unit untuk 3 gereja)
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                    1 unit tempat sampah untuk Sekolah Dasar (SD) Kanawa
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                    1 unit tempat sampah untuk PAUD Kanawa
+                                </li>
+                                <li class="mb-2">
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                    Sosialisasi pentingnya membuang sampah pada tempatnya
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill text-warning me-2"></i>
+                                    Pemasangan tempat sampah di titik-titik strategis
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- ==========================================
+                 PROGRAM TAMBAHAN (DIKOSONGKAN SEMENTARA)
+                 ========================================== -->
+            <div class="text-center mb-5 pt-4">
+                <span class="badge bg-secondary text-white fw-bold px-3 py-2 mb-2 fs-6">PROGRAM TAMBAHAN</span>
+                <h2 class="fw-bold text-dark">
+                    <i class="bi bi-plus-circle-fill text-yapen me-2"></i>Program Tambahan
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Program tambahan akan segera menyusul setelah program utama selesai dilaksanakan. 
+                    <span class="d-block mt-2 text-warning fw-semibold">
+                        <i class="bi bi-hourglass-split me-1"></i> Dalam tahap perencanaan
+                    </span>
+                </p>
+            </div>
+
+            <!-- ==========================================
+                 PROGRAM TAMBAHAN - KOSONG
+                 ========================================== -->
+            <div class="row g-4 text-center justify-content-center">
+                <div class="col-12">
+                    <div class="card shadow-sm border-0 kartu-interaktif p-5" style="background-color: rgba(0,0,0,0.02);">
+                        <div class="card-body text-center py-5">
+                            <div class="mb-4 text-muted">
+                                <i class="bi bi-clock-history fs-1 text-secondary"></i>
+                            </div>
+                            <h5 class="fw-bold text-muted">Program Tambahan Segera Hadir</h5>
+                            <p class="text-muted small mb-0" style="max-width: 500px; margin: 0 auto;">
+                                Program tambahan akan diisi setelah evaluasi dan penyelesaian program utama. 
+                                Kami akan mengupdate halaman ini dengan program-program baru yang bermanfaat 
+                                bagi masyarakat Kampung Kanawa.
+                            </p>
+                            <div class="mt-3">
+                                <span class="badge bg-light text-muted border px-3 py-2">
+                                    <i class="bi bi-hourglass-top me-1"></i> Menunggu realisasi program utama
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BAGIAN GALERI
+         ========================================== -->
+       <!-- ==========================================
+         BAGIAN GALERI
+         ========================================== -->
+    <section id="galeri" class="py-5 bg-white-solid">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-3 text-yapen">
+                <i class="bi bi-images me-2"></i>Galeri Dokumentasi Kegiatan
+            </h2>
+            <p class="text-muted mb-5">
+                Dokumentasi pelaksanaan program kerja KKN Kelompok 43 di Kampung Kanawa, Kepulauan Yapen.
+            </p>
+            
+            <div class="row g-4">
+                
+                <!-- ==========================================
+                     GALERI 1: TUGU SELAMAT DATANG
+                     ========================================== -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif overflow-hidden">
+                        <img src="images/Tugu.png" alt="Tugu Selamat Datang Kampung Kanawa" 
+     class="card-img-top" style="height: 250px; object-fit: cover;"
+     onerror="this.src='https://via.placeholder.com/400x300/004d73/ffffff?text=Tugu+Selamat+Datang'">
+                        <div class="card-body text-start">
+                            <h5 class="fw-bold text-yapen">
+                                <i class="bi bi-signpost-2-fill me-2"></i>Tugu Selamat Datang
+                            </h5>
+                            <p class="text-muted small mb-2">
+                                Dokumentasi pembangunan tugu sebagai simbol penyambutan di pintu masuk Kampung Kanawa.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-yapen-blue">Proker 1</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Juli 2026
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     GALERI 2: PLANG JALAN (BELUM ADA FOTO)
+                     ========================================== -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif overflow-hidden">
+                      <img src="images/plang jalan.png." alt="Plang Jalan Kampung Kanawa" 
+     class="card-img-top" style="height: 250px; width: 100%; object-fit: cover;"
+     onerror="this.src='https://via.placeholder.com/400x300/28a745/ffffff?text=Plang+Jalan'">
+                        <div class="card-body text-start">
+                            <h5 class="fw-bold text-success">
+                                <i class="bi bi-sign-turn-right-fill me-2"></i>Plang Jalan
+                            </h5>
+                            <p class="text-muted small mb-2">
+                                Dokumentasi pemasangan plang petunjuk arah di titik-titik strategis Kampung Kanawa.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Proker 2</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Juli 2026
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     GALERI 3: TEMPAT SAMPAH (BELUM ADA FOTO)
+                     ========================================== -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 kartu-interaktif overflow-hidden">
+                        <img src="images/tempat sampah.png" alt="Tempat Sampah Gereja, SD & PAUD" 
+                             class="card-img-top" style="height: 250px; object-fit: cover;"
+                             onerror="this.src='https://via.placeholder.com/400x300/fd7e14/ffffff?text=Tempat+Sampah+(Segera)'">
+                        <div class="card-body text-start">
+                            <h5 class="fw-bold text-warning">
+                                <i class="bi bi-trash3-fill me-2"></i>Tempat Sampah
+                            </h5>
+                            <p class="text-muted small mb-2">
+                                Dokumentasi pembuatan tempat sampah di 3 gereja, 1 SD, dan 1 PAUD Kanawa.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-warning text-dark">Proker 3</span>
+                                <small class="text-muted">
+                                    <i class="bi bi-calendar3 me-1"></i>Juli 2026
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ==========================================
+                 KETERANGAN GALERI
+                 ========================================== -->
+            <div class="mt-4">
+                <p class="text-muted small">
+                    <i class="bi bi-info-circle-fill me-1"></i>
+                    Foto dokumentasi akan terus diperbarui seiring pelaksanaan program kerja.
+                </p>
+            </div>
+        </div>
+    </section>
+
+       <!-- ==========================================
+         BAGIAN TIM KKN (STRUKTUR ORGANISASI)
+         ========================================== -->
+    <section id="tim" class="bg-dark text-white py-5" aria-label="Struktur organisasi tim KKN Kelompok 43">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-warning">
+                    <i class="bi bi-diagram-3-fill me-2"></i>Struktur Organisasi Kelompok 43
+                </h2>
+                <p class="text-light text-opacity-75 mx-auto" style="max-width: 650px;">
+                    Bagan kepengurusan dan pembagian divisi kerja KKN Tematik Universitas Cenderawasih 
+                    di Kampung Kanawa, Kepulauan Yapen Tahun 2026.
+                </p>
+            </div>
+
+            <!-- ==========================================
+                 1. DOSEN PENDAMPING LAPANGAN (DPL)
+                 ========================================== -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-4 text-center">
+                    <div class="p-3 rounded bg-secondary bg-opacity-10 border border-warning border-opacity-50 h-100 kartu-interaktif">
+                        <div class="bg-warning rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center shadow-sm" style="width: 85px; height: 85px;">
+                            <i class="bi bi-person-badge-fill fs-2 text-dark"></i>
+                        </div>
+                        <h6 class="fw-bold mb-1 text-warning">Indra Yudistira, S.Pd., M.Pd.</h6>
+                        <p class="small text-light text-opacity-75 mb-0">Dosen Pendamping Lapangan (DPL)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panah dekorasi -->
+            <div class="text-center mb-4 text-warning">
+                <i class="bi bi-arrow-down fs-3"></i>
+            </div>
+
+                       <!-- ==========================================
+                 2. BADAN PENGURUS HARIAN (BPH)
+                 ========================================== -->
+            <div class="text-center mb-3">
+                <span class="badge bg-warning text-dark fw-bold px-3 py-2 mb-3 fs-6">BADAN PENGURUS HARIAN (BPH)</span>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center mb-5">
+                
+                <!-- Ketua: Rian Marco Heipon -->
+                <div class="col">
+                    <div class="p-4 rounded bg-secondary bg-opacity-25 h-100 text-center kartu-interaktif">
+                        <div class="bg-success rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 90px; height: 90px;">
+                            <i class="bi bi-person-fill fs-2 text-light"></i>
+                        </div>
+                        <h6 class="fw-bold mb-1">Rian Marco Heipon</h6>
+                        <p class="small text-warning mb-0 fw-semibold">Ketua Kelompok</p>
+                    </div>
+                </div>
+                
+                <!-- Wakil Ketua: Maureen A.G. Wowor -->
+                <div class="col">
+                    <div class="p-4 rounded bg-secondary bg-opacity-25 h-100 text-center kartu-interaktif">
+                        <div class="bg-primary rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 90px; height: 90px;">
+                            <i class="bi bi-person-fill fs-2 text-light"></i>
+                        </div>
+                        <h6 class="fw-bold mb-1">Maureen A.G. Wowor</h6>
+                        <p class="small text-warning mb-0 fw-semibold">Wakil Ketua</p>
+                    </div>
+                </div>
+                
+                <!-- Sekretaris 1: Ade Jovanka -->
+                <div class="col">
+                    <div class="p-4 rounded bg-secondary bg-opacity-25 h-100 text-center kartu-interaktif">
+                        <div class="bg-purple rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: #6f42c1;">
+                            <i class="bi bi-file-earmark-text-fill fs-2 text-light"></i>
+                        </div>
+                        <h6 class="fw-bold mb-1">Ade Jovanka</h6>
+                        <p class="small text-warning mb-0 fw-semibold">Sekretaris 1</p>
+                    </div>
+                </div>
+                
+                <!-- Sekretaris 2: Resy Gloria Diella Windesy -->
+                <div class="col">
+                    <div class="p-4 rounded bg-secondary bg-opacity-25 h-100 text-center kartu-interaktif">
+                        <div class="bg-info rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: #17a2b8;">
+                            <i class="bi bi-file-earmark-text-fill fs-2 text-light"></i>
+                        </div>
+                        <h6 class="fw-bold mb-1">Resy Gloria Diella Windesy</h6>
+                        <p class="small text-warning mb-0 fw-semibold">Sekretaris 2</p>
+                    </div>
+                </div>
+
+                <!-- Bendahara: Luvi Ayu Putri Kinanti -->
+                <div class="col">
+                    <div class="p-4 rounded bg-secondary bg-opacity-25 h-100 text-center kartu-interaktif">
+                        <div class="bg-orange rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: #fd7e14;">
+                            <i class="bi bi-cash-stack fs-2 text-light"></i>
+                        </div>
+                        <h6 class="fw-bold mb-1">Luvi Ayu Putri Kinanti</h6>
+                        <p class="small text-warning mb-0 fw-semibold">Bendahara</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Panah dekorasi -->
+            <div class="text-center mb-4 text-warning">
+                <i class="bi bi-arrow-down fs-3"></i>
+            </div>
+
+            <!-- ==========================================
+                 3. DIVISI-DIVISI KERJA
+                 ========================================== -->
+            <div class="text-center mb-4">
+                <span class="badge bg-warning text-dark fw-bold px-3 py-2 fs-6">DIVISI-DIVISI KERJA</span>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                
+                <!-- ==========================================
+                     DIVISI ACARA
+                     ========================================== -->
+                <div class="col">
+                    <div class="card h-100 bg-secondary bg-opacity-10 text-white border border-secondary border-opacity-20 kartu-interaktif">
+                        <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center justify-content-between">
+                            <span><i class="bi bi-mic-fill me-2"></i>DIVISI ACARA</span>
+                            <span class="badge bg-dark text-warning">3 Orang</span>
+                        </div>
+                        <div class="card-body text-start">
+                            <p class="small text-warning mb-1 fw-bold">Koordinator:</p>
+                            <h6 class="fw-semibold mb-1">Esterlina Nesti Salamuk</h6>
+                            <p class="small text-light text-opacity-75 mb-1 fw-bold mt-2">Anggota:</p>
+                            <ul class="list-unstyled small mb-0 ps-1 text-light text-opacity-90">
+                                <li><i class="bi bi-dot text-warning"></i>Karel Rangga Samudera</li>
+                                <li><i class="bi bi-dot text-warning"></i>Melkior Wisal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     DIVISI PERLENGKAPAN
+                     ========================================== -->
+                <div class="col">
+                    <div class="card h-100 bg-secondary bg-opacity-10 text-white border border-secondary border-opacity-20 kartu-interaktif">
+                        <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center justify-content-between">
+                            <span><i class="bi bi-box-seam-fill me-2"></i>DIVISI PERLENGKAPAN</span>
+                            <span class="badge bg-dark text-warning">3 Orang</span>
+                        </div>
+                        <div class="card-body text-start">
+                            <p class="small text-warning mb-1 fw-bold">Koordinator:</p>
+                            <h6 class="fw-semibold mb-1">Rio Ferdian</h6>
+                            <p class="small text-light text-opacity-75 mb-1 fw-bold mt-2">Anggota:</p>
+                            <ul class="list-unstyled small mb-0 ps-1 text-light text-opacity-90">
+                                <li><i class="bi bi-dot text-warning"></i>Wahyu Ardiansyah</li>
+                                <li><i class="bi bi-dot text-warning"></i>Christhio G. Ayer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     DIVISI KONSUMSI
+                     ========================================== -->
+                <div class="col">
+                    <div class="card h-100 bg-secondary bg-opacity-10 text-white border border-secondary border-opacity-20 kartu-interaktif">
+                        <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center justify-content-between">
+                            <span><i class="bi bi-egg-fried me-2"></i>DIVISI KONSUMSI</span>
+                            <span class="badge bg-dark text-warning">2 Orang</span>
+                        </div>
+                        <div class="card-body text-start">
+                            <p class="small text-warning mb-1 fw-bold">Koordinator:</p>
+                            <h6 class="fw-semibold mb-1">Sania Venny Elizabeth Mallo</h6>
+                            <p class="small text-light text-opacity-75 mb-1 fw-bold mt-2">Anggota:</p>
+                            <ul class="list-unstyled small mb-0 ps-1 text-light text-opacity-90">
+                                <li><i class="bi bi-dot text-warning"></i>Rikalin Amamehi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     DIVISI DOKUMENTASI
+                     ========================================== -->
+                <div class="col">
+                    <div class="card h-100 bg-secondary bg-opacity-10 text-white border border-secondary border-opacity-20 kartu-interaktif">
+                        <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center justify-content-between">
+                            <span><i class="bi bi-camera-fill me-2"></i>DIVISI DOKUMENTASI</span>
+                            <span class="badge bg-dark text-warning">2 Orang</span>
+                        </div>
+                        <div class="card-body text-start">
+                            <p class="small text-warning mb-1 fw-bold">Penanggung Jawab:</p>
+                            <h6 class="fw-semibold mb-1">Josia Novandri Triadi</h6>
+                            <p class="small text-light text-opacity-75 mb-1 fw-bold mt-2">Anggota:</p>
+                            <ul class="list-unstyled small mb-0 ps-1 text-light text-opacity-90">
+                                <li><i class="bi bi-dot text-warning"></i>Jemsi Payung</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     DIVISI KEBERSIHAN
+                     ========================================== -->
+                <div class="col">
+                    <div class="card h-100 bg-secondary bg-opacity-10 text-white border border-secondary border-opacity-20 kartu-interaktif">
+                        <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center justify-content-between">
+                            <span><i class="bi bi-brush-fill me-2"></i>DIVISI KEBERSIHAN</span>
+                            <span class="badge bg-dark text-warning">3 Orang</span>
+                        </div>
+                        <div class="card-body text-start">
+                            <p class="small text-warning mb-1 fw-bold">Koordinator:</p>
+                            <h6 class="fw-semibold mb-1">Stenli Susilo Rerei</h6>
+                            <p class="small text-light text-opacity-75 mb-1 fw-bold mt-2">Anggota:</p>
+                            <ul class="list-unstyled small mb-0 ps-1 text-light text-opacity-90">
+                                <li><i class="bi bi-dot text-warning"></i>Lusiano W. Bindosano</li>
+                                <li><i class="bi bi-dot text-warning"></i>Emince Kogoya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ==========================================
+                     DIVISI KEAMANAN
+                     ========================================== -->
+                <div class="col">
+                    <div class="card h-100 bg-secondary bg-opacity-10 text-white border border-secondary border-opacity-20 kartu-interaktif">
+                        <div class="card-header bg-warning text-dark fw-bold d-flex align-items-center justify-content-between">
+                            <span><i class="bi bi-shield-lock-fill me-2"></i>DIVISI KEAMANAN</span>
+                            <span class="badge bg-dark text-warning">2 Orang</span>
+                        </div>
+                        <div class="card-body text-start">
+                            <p class="small text-warning mb-1 fw-bold">Koordinator:</p>
+                            <h6 class="fw-semibold mb-1">Nataniel Pigai</h6>
+                            <p class="small text-light text-opacity-75 mb-1 fw-bold mt-2">Anggota:</p>
+                            <ul class="list-unstyled small mb-0 ps-1 text-light text-opacity-90">
+                                <li><i class="bi bi-dot text-warning"></i>Nikolaus Mote</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END DIVISI-DIVISI KERJA -->
+            
+        </div>
+    </section>
+
+    <!-- ==========================================
+         BAGIAN HUBUNGI KAMI
+         ========================================== -->
+    <section id="kontak" class="py-5 bg-light-solid">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4 text-yapen">
+                <i class="bi bi-envelope-at-fill me-2"></i>Hubungi Kami
+            </h2>
+            <p class="text-muted mb-5">
+                Punya pertanyaan mengenai program kerja kami di Kampung Kanawa atau ingin berkolaborasi? 
+                Silakan hubungi kami melalui saluran di bawah ini.
+            </p>
+            
+            <div class="row justify-content-center g-4">
+                <!-- Sosial Media -->
+                <div class="col-md-4">
+                    <div class="p-4 border rounded bg-white shadow-sm h-100 kartu-interaktif">
+                        <div class="text-warning mb-3 d-flex justify-content-center gap-3">
+                            <i class="bi bi-instagram fs-2 text-yapen"></i>
+                            <i class="bi bi-tiktok fs-2 text-dark"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3 text-yapen">Media Sosial</h5>
+                        <p class="text-muted small">Ikuti perkembangan harian dan dokumentasi langsung pengabdian kami di Kampung Kanawa.</p>
+                        <div class="d-flex flex-column gap-2 align-items-center">
+                            <a href="https://instagram.com" target="_blank" class="btn btn-outline-yapen fw-bold btn-sm w-100">
+                                <i class="bi bi-instagram me-2"></i>@kkn_uncen_2026
+                            </a>
+                            <a href="https://www.tiktok.com/@kkn.kel43.yapen" target="_blank" class="btn btn-outline-dark fw-bold btn-sm w-100">
+                                <i class="bi bi-tiktok me-2"></i>@kkn.kel43.yapen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Posko -->
+                <div class="col-md-4">
+                    <div class="p-4 border rounded bg-white shadow-sm h-100 kartu-interaktif">
+                        <div class="text-warning mb-3">
+                            <i class="bi bi-geo-alt-fill fs-2 text-yapen"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3 text-yapen">Posko KKN</h5>
+                        <p class="text-muted small">Alamat posko utama kelompok kami selama mengabdi di Kampung Kanawa.</p>
+                        <p class="fw-semibold text-dark small mb-0">
+                            <i class="bi bi-pin-map-fill text-danger me-1"></i>
+                            Kampung Kanawa, Kepulauan Yapen, Papua
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+           <!-- ==========================================
+         FOOTER DENGAN LOGO DAN CREDIT DEVELOPER
+         ========================================== -->
+    <footer class="bg-black text-white text-center py-4">
+        <div class="container">
+            <!-- Logo di Footer -->
+            <div class="d-flex justify-content-center align-items-center gap-3 mb-3 flex-wrap">
+                <img src="images/logo uncen.png" alt="Logo Uncen" height="30" 
+                     style="background: transparent !important; filter: brightness(1.3) contrast(1.1);"
+                     onerror="this.style.display='none'">
+                <span class="text-secondary">|</span>
+                <img src="images/logo kelompok.png" alt="Logo Kelompok 43" height="30" 
+                     style="background: transparent !important; filter: brightness(1.3) contrast(1.1);"
+                     onerror="this.style.display='none'">
+            </div>
+            <p class="mb-0 small text-secondary">
+                © 2026 KKN Universitas Cenderawasih Kelompok 43 - Kampung Kanawa, Kepulauan Yapen. 
+                Semua Hak Cipta Dilindungi.
+            </p>
+            <!-- ===== CREDIT DEVELOPER ===== -->
+            <p class="mb-0 small text-secondary mt-2">
+                <i class="bi bi-code-slash me-1"></i> 
+                Developed by 
+                <a href="https://wa.me/6281346701437?text=Halo%20Developer%2C%20saya%20ingin%20bertanya%20tentang%20website%20KKN" 
+                   target="_blank" 
+                   style="color: #25D366; text-decoration: none; font-weight: 500;">
+                    <i class="bi bi-whatsapp me-1"></i> Christhio Ayer
+                </a>
+                <span class="text-secondary mx-1">|</span>
+                <span class="text-secondary">v1.0</span>
+            </p>
+        </div>
+    </footer>
+    <!-- ==========================================
+         TOMBOL KEMBALI KE ATAS (BACK TO TOP)
+         ========================================== -->
+    <button type="button" class="btn text-white fw-bold" id="tombolAtas" title="Kembali ke atas">
+        <i class="bi bi-arrow-up-short fs-4"></i>
+    </button>
+    
+    <!-- ==========================================
+         BOOTSTRAP JS
+         ========================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- ==========================================
+         JAVASCRIPT KUSTOM
+         ========================================== -->
+    <script src="js/script.js"></script>
+      <!-- ==========================================
+         COOKIE CONSENT
+         ========================================== -->
+    <div id="cookie-consent" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:rgba(26,26,46,0.95);backdrop-filter:blur(10px);color:white;padding:15px 25px;border-radius:16px;box-shadow:0 10px 50px rgba(0,0,0,0.4);z-index:9998;display:none;max-width:500px;width:90%;text-align:center;border:1px solid rgba(255,255,255,0.08);">
+        <div class="d-flex align-items-center gap-3 flex-wrap justify-content-center">
+            <div>
+                <i class="bi bi-cookie fs-3 text-warning"></i>
+            </div>
+            <div class="flex-grow-1">
+                <p class="small mb-1 fw-semibold" style="color:#e0e0e0;">🍪 Kami Menggunakan Cookie</p>
+                <p class="small mb-0" style="color:#9999bb;font-size:0.75rem;">Website ini menggunakan cookie untuk meningkatkan pengalaman Anda.</p>
+            </div>
+            <div>
+                <button onclick="acceptCookie()" class="btn btn-yapen-blue btn-sm fw-bold px-4" style="border-radius:50px;">
+                    Setuju
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
